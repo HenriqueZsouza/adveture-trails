@@ -1,5 +1,7 @@
+import { CardTrilha } from './components/CardTrilha'
+
 export const App = () => {
   return (
-    <h1>Hello World!</h1>
+    <CardTrilha />
   )
 }
