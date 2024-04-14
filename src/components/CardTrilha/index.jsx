@@ -1,12 +1,9 @@
 import { Image } from 'antd'
 import { IMG_TRAIL } from '../../../constants'
-
 import { Container, Card, CardRight, CardLeft } from './styled'
 
 
-export const CardTrilha = () => {
-
-  const imgTrail = "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+export const CardTrilha = ({ nameTrail, city, state, duration, path, difficulty, userName, urlImg }) => {
 
 
   return (
@@ -21,7 +18,11 @@ export const CardTrilha = () => {
           />
         </CardLeft>
         <CardRight>
-          <h3>Trilha da Costa da Lagoa - Florianópolis / SC</h3>
+          <h3>{`${nameTrail} - ${city} / ${state}`}</h3>
+          <p><strong>Duração:</strong> {duration}</p>
+          <p><strong>Trajeto:</strong> {path}</p>
+          <p>{difficulty}</p>
+          <p><strong>Por:</strong> {userName}</p>
         </CardRight>
       </Card>
     </Container>

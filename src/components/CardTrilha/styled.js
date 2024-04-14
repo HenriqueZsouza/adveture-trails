@@ -16,8 +16,7 @@ export const Card = styled.div`
   border-radius: 5px;
 `
 export const CardRight = styled.div`
-  display: flex;
-  justify-content: left;
+  flex-direction: column;
   padding: 15px;
   width: 500px;
   height: 100%;
